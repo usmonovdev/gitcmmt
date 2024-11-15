@@ -111,17 +111,8 @@ We welcome contributions! If you have ideas for improvement or find bugs, feel f
 
 ---
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
----
-
 ## Support
 
-If you encounter issues, please [open an issue on GitHub](https://github.com/your-repo-url) or contact us at `support@example.com`.
+If you encounter issues, please [open an issue on GitHub](https://github.com/usmonovdev/gitcmmt/issues).
 
 Happy coding! 🚀
-```
-
-Replace `https://github.com/your-repo-url` and `support@example.com` with the actual links and email address for your project. Let me know if you'd like further adjustments!
