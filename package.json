@@ -1,6 +1,6 @@
 {
   "name": "gitcmmt",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "`gitcmmt` is a lightweight and user-friendly CLI tool designed to simplify and streamline your Git workflow. It automates common Git tasks like staging, committing, and pushing changes, while allowing flexibility through configurable options",
   "main": "index.js",
   "bin": {
@@ -9,7 +9,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "git commit",
+    "commits",
+    "git",
+    "message",
+    "pre commit",
+    "auto committer",
+    "commit generator",
+    "commit cli",
+    "commit message"
+  ],
   "author": "Usmonov Azizbek",
   "dependencies": {
     "chalk": "^4.1.2",
