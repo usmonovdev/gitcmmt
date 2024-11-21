@@ -1,6 +1,6 @@
 {
   "name": "gitcmmt",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "`gitcmmt` is a lightweight and user-friendly CLI tool designed to simplify and streamline your Git workflow. It automates common Git tasks like staging, committing, and pushing changes, while allowing flexibility through configurable options",
   "main": "index.js",
   "bin": {

@@ -82,12 +82,16 @@ const askQuestion = (query) => {
       process.exit(0);
     }
 
+    const minimizeChanges =
+      changes.length > 300 ? changes.slice(0, 300) : changes;
+
     // Git commit
     const commitMessage = argv.dbg
       ? "Bugs fixed"
       : argv.msg
       ? argv.msg
-      : `Changes made to: ${changes.trim().replace(/\n/g, ", ")}`;
+      : `Changes made to: ${minimizeChanges.trim().replace(/\n/g, ", ")}`;
+
     execSync(`git commit -m "${commitMessage}"`, { stdio: "inherit" });
 
     const remote = argv.remote ? argv.remote : "origin";
@@ -98,9 +102,10 @@ const askQuestion = (query) => {
 
     if (!argv.autoPush && !argv.skipPush) {
       console.log("\n" + chalk.green("Changes committed"));
-      const answer = await askQuestion(
-        chalk.bgGreen(`\n Push to ${remote}/${branch}? (y/n): `)
-      );
+      const answer =
+        (await askQuestion(
+          chalk.bgGreen(`\n Push to ${remote}/${branch}? (y/n): `)
+        )) || "y";
       if (answer === "y") {
         pushDecision = true;
       } else {
